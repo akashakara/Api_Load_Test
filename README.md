@@ -38,6 +38,7 @@ Backend (Spring Boot)
 
 cd loadtester
 ./mvnw spring-boot:run
+
 Frontend (React.js)
 
 cd load-test-app

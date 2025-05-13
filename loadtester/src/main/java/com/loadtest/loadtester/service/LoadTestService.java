@@ -71,10 +71,7 @@ public class LoadTestService {
         return calculateMetrics(responseTimes, statusCodeMap, errorResponses, timeline);
     }
 
-    private LoadTestResult calculateMetrics(List<Double> times,
-                                            Map<Integer, Integer> statusCodes,
-                                            List<ErrorResponse> errors,
-                                            List<TimestampedResult> timeline) {
+    private LoadTestResult calculateMetrics(List<Double> times, Map<Integer, Integer> statusCodes,List<ErrorResponse> errors, List<TimestampedResult> timeline) {
         LoadTestResult result = new LoadTestResult();
 
         int success = 0;
